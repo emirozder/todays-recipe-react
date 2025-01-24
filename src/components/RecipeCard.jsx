@@ -10,7 +10,7 @@ const RecipeCard = ({ recipe, setSelectedRecipe, setFavorites }) => {
   };
 
   const [isFavorite, setIsFavorite] = useState(
-    JSON.parse(localStorage.getItem("favorites")).find(
+    JSON.parse(localStorage.getItem("favorites"))?.find(
       (fav) => fav.id === recipe.id
     )
   );
