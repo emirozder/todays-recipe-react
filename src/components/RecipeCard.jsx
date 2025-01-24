@@ -103,7 +103,7 @@ const RecipeCard = ({ recipe, setSelectedRecipe, setFavorites }) => {
       </div>
 
       {toastMessage && (
-        <div className="toast toast-end z-10 transition-opacity">
+        <div className="toast toast-center toast-top sm:toast-end z-10 transition-opacity">
           <div
             className={`alert ${
               toastMessage?.includes("added") ? "bg-green-300" : "bg-red-300"
